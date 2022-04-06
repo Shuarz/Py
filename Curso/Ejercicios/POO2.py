@@ -45,8 +45,11 @@ class Moto(Vehiculo): #dentro de los parentesis ponemos la clase que hereda
         "\n", self.caballito)
 
 
-class VElectricos():
-    def __init__(self):
+class VElectricos(Vehiculo):
+    def __init__(self, marca, modelo):
+
+        super().__init__(marca, modelo) #viaja a la clase padre, se instancia y ya tiene el contructor hecho con los atributos
+
         self.autonomia=100
 
     def cargarEnergia(self):
@@ -68,4 +71,4 @@ print(miFurgonetta.arrancar(True))
 class BicicletaElectrica(VElectricos, Vehiculo): #cuando herada dos clases, siempre usa primero la que le pasamos primero
     pass
 
-miBici=BicicletaElectrica()
+miBici=BicicletaElectrica("honda", "12333")
