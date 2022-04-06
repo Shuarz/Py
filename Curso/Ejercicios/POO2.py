@@ -71,4 +71,4 @@ print(miFurgonetta.arrancar(True))
 class BicicletaElectrica(VElectricos, Vehiculo): #cuando herada dos clases, siempre usa primero la que le pasamos primero
     pass
 
-miBici=BicicletaElectrica("honda", "12333")
+miBici=BicicletaElectrica("honda", "12345")
