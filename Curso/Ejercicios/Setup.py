@@ -1,6 +1,3 @@
-from ensurepip import version
-from importlib.resources import Package
-from unicodedata import name
 from setuptools import setup
 
 
@@ -11,5 +8,5 @@ setup(
         author="Shuarz",
         author_email="shuarz.wolfz@gmail.com",
         url="https://github.com/Shuarz",
-        Packages=["Calculadora","CalculosGenerales"]
+        Packages=["Calculadora","Calculadora.Potencia"]
      )
